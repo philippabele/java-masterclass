@@ -5,6 +5,13 @@ public class Hello {
         String text = "Hello World";
         System.out.println(text);
 
+        int myFirstNumber = 10 + 5;
+        System.out.println(myFirstNumber);
+
+        int mySecondNumber = 42;
+        int myTotal = myFirstNumber + mySecondNumber;
+        System.out.println(myTotal);
+
     }
 
 }
