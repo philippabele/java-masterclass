@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PrimitiveTypesChallenge",
+            "request": "launch",
+            "mainClass": "Section03FirstSteps.PrimitiveTypesChallenge",
+            "projectName": "java-masterclass_60d1075a"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimitiveTypes",
+            "request": "launch",
+            "mainClass": "Section03FirstSteps.PrimitiveTypes",
+            "projectName": "java-masterclass_60d1075a"
+        },
+        {
+            "type": "java",
             "name": "Launch Hello",
             "request": "launch",
             "mainClass": "Hello",
