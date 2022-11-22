@@ -31,5 +31,9 @@ public class FloatAndDouble {
         System.out.println("My Double calc: " + myDoubleValue2);
         System.out.println("My Double calc2: " + myDoubleValue3);
 
+        double myPound = 200_000.123_456d;
+        double myKilogram = myPound * 0.453_592_37d;
+        System.out.println(myPound + " pounds equals " + myKilogram + " kilograms");
+
     }
 }
