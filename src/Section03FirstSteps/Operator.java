@@ -28,7 +28,7 @@ public class Operator {
         int topScore = 80;
         int secondTopScore = 60;
 
-        if (topScore > secondTopScore && topScore < 100) {
+        if ((topScore > secondTopScore) && (topScore < 100)) {
             System.out.println("Still space for improvement");
         }
 
