@@ -10,5 +10,14 @@ public class Operator {
         result = result * 10;
         result = result / 5;
         result = result % 3;
+
+        result++;
+        result--;
+
+        result += 2;
+        result -= 1;
+        result *= 10;
+        result /= 2;
+
     }
 }
