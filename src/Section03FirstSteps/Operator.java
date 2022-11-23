@@ -6,5 +6,9 @@ public class Operator {
         int result = 1 + 2; // my Comment
         System.out.println(result);
 
+        result = result - 1;
+        result = result * 10;
+        result = result / 5;
+        result = result % 3;
     }
 }
