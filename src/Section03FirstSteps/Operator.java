@@ -25,12 +25,29 @@ public class Operator {
             System.out.println("And I am scared of them :)");
         }
 
-        int topScore = 80;
+        int topScore = 50;
         int secondTopScore = 60;
 
+        // Logical AND
         if ((topScore > secondTopScore) && (topScore < 100)) {
-            System.out.println("Still space for improvement");
+            System.out.println("Both conditions fullfilled");
         }
+
+        // Logical OR
+        if ((topScore > secondTopScore) || (topScore < 100)) {
+            System.out.println("Al least one condition fullfilled");
+        }
+
+        // Good practice with boolean values
+        boolean isCar = false;
+        if (!isCar) {
+            System.out.println("Go out and walk");
+        }
+
+        // The ternary operator
+        boolean isSomething = true;
+        int isSomehtingElse = isSomething ? 1 : 2;
+        System.out.println("Value of isSomethingElse is " + isSomehtingElse);
 
     }
 }
