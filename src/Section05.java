@@ -11,6 +11,12 @@ public class Section05 {
             highscore = highscore - 1000; // 2 expression
         }
 
+        // whitespace is ignored in java, but improves human readability
+
+        System.out.println("This print spans " +
+                "across several lines of code, " +
+                "but end in this third one.");
+
     }
 
 }
