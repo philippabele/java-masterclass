@@ -1,4 +1,6 @@
-public class Section05 {
+package Section05;
+
+public class ExpressionsAndWhitespace {
 
     public static void main(String[] args) {
 
