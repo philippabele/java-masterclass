@@ -9,17 +9,16 @@ public class MethodExample {
         int bonus = 100;
 
         int finalScore = score;
+        System.out.println("Your final score was " + finalScore);
 
-        calculateScore();
+        // arguments are the values which are passed to the methode
+        calculateScore(gameOver, score, levelCompleted, bonus);
 
     }
 
-    private static void calculateScore() {
-
-        boolean gameOver = true;
-        int score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
+    // parameters are defined in the function declaration
+    private static void calculateScore(boolean gameOver, int score,
+            int levelCompleted, int bonus) {
 
         int finalScore = score;
 
