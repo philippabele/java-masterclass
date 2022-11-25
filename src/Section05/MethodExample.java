@@ -12,12 +12,18 @@ public class MethodExample {
         System.out.println("Your final score was " + finalScore);
 
         // arguments are the values which are passed to the methode
-        calculateScore(gameOver, score, levelCompleted, bonus);
+        int newScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.out.println("Your final score was " + newScore);
 
+        // you can reuse the return of a methode directly
+        System.out.println("Your final score was " +
+                calculateScore(gameOver, score, levelCompleted, bonus));
     }
 
+    // method with return value ? >> call it a function
+    // method without a return value ? >> some call it procedure
     // parameters are defined in the function declaration
-    private static void calculateScore(boolean gameOver, int score,
+    private static int calculateScore(boolean gameOver, int score,
             int levelCompleted, int bonus) {
 
         int finalScore = score;
@@ -25,8 +31,9 @@ public class MethodExample {
         if (gameOver) {
             finalScore += (levelCompleted * bonus);
             finalScore += 1000;
-            System.out.println("Your final score was " + finalScore);
+
         }
+        return finalScore;
 
     }
 
