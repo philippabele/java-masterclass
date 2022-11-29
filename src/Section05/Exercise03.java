@@ -49,9 +49,26 @@ public class Exercise03 {
          * static like we have been doing so far in the course.NOTE: Do not add a main
          * method to solution code.
          */
+
+        printMegaBytesAndKiloBytes(2500);
+        printMegaBytesAndKiloBytes(-1024);
+        printMegaBytesAndKiloBytes(5000);
+
     }
 
-    public static void name() {
+    public static void printMegaBytesAndKiloBytes(int kiloBytes) {
+
+        int megaBytes = 0;
+        int kiloBytesRemainder = 0;
+
+        if (kiloBytes < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            kiloBytesRemainder = kiloBytes % 1024;
+            megaBytes = (kiloBytes - kiloBytesRemainder) / 1024;
+            System.out.println(kiloBytes + " KB = " +
+                    megaBytes + " MB and " + kiloBytesRemainder + " KB");
+        }
 
     }
 
