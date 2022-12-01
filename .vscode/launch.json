@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Section05",
+            "request": "launch",
+            "mainClass": "Section05",
+            "projectName": "java-masterclass_60d1075a"
+        },
+        {
+            "type": "java",
             "name": "Launch FloatAndDouble",
             "request": "launch",
             "mainClass": "Section03FirstSteps.FloatAndDouble",
