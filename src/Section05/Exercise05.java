@@ -53,9 +53,23 @@ public class Exercise05 {
         System.out.println(isLeapYear(2020));
     }
 
-    public static boolean isLeapYear(int i) {
+    public static boolean isLeapYear(int year) {
 
         boolean yearLap = false;
+
+        if ((year < 1) || (year > 9999)) {
+            return false;
+        }
+
+        if ((year % 4) == 0) {
+            if ((year % 100) == 0) {
+                if ((year % 400) == 0) {
+                    yearLap = true;
+                }
+            } else {
+                yearLap = true;
+            }
+        }
 
         return yearLap;
     }
