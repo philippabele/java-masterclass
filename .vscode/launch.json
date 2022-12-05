@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Exercise10",
+            "request": "launch",
+            "mainClass": "Section05.Exercise10",
+            "projectName": "java-masterclass_60d1075a"
+        },
+        {
+            "type": "java",
             "name": "Launch Exercise07",
             "request": "launch",
             "mainClass": "Section05.Exercise07",
