@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Exercise15SumOdd",
+            "request": "launch",
+            "mainClass": "Section06ControlFlow.Exercise15SumOdd",
+            "projectName": "java-masterclass_60d1075a"
+        },
+        {
+            "type": "java",
             "name": "Launch Exercise10",
             "request": "launch",
             "mainClass": "Section05.Exercise10",
