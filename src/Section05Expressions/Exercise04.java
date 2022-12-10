@@ -1,4 +1,4 @@
-package Section05;
+package Section05Expressions;
 
 public class Exercise04 {
     public static void main(String[] args) {

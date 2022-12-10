@@ -1,4 +1,4 @@
-package Section05;
+package Section05Expressions;
 
 public class MethodExample {
     public static void main(String[] args) {

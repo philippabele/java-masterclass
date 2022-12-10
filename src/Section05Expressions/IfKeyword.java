@@ -1,4 +1,4 @@
-package Section05;
+package Section05Expressions;
 
 public class IfKeyword {
     public static void main(String[] args) {
