@@ -1,6 +1,6 @@
 package Section06ControlFlow;
 
-public class Exercise16 {
+public class Exercise16Palindrom {
     /*
      * Write a method called isPalindrome with one int parameter called number.
      * 
