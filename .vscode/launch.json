@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Exercise17FirstAndLastDigit",
+            "request": "launch",
+            "mainClass": "Section06ControlFlow.Exercise17FirstAndLastDigit",
+            "projectName": "java-masterclass_60d1075a"
+        },
+        {
+            "type": "java",
             "name": "Launch Exercise15SumOdd",
             "request": "launch",
             "mainClass": "Section06ControlFlow.Exercise15SumOdd",
