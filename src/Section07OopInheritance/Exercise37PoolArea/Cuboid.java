@@ -13,7 +13,7 @@ public class Cuboid extends Rectangle {
         return height;
     }
 
-    public double getVolumne() {
+    public double getVolumn() {
         return getArea() * height;
     }
 
