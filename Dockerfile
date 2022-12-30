@@ -7,6 +7,10 @@ ARG email
 ENV GH_TOKEN=${GH_TOKEN}
 # apt update
 RUN apt update
+# install zsh
+RUN apt install zsh -y
+# install ohmyzsh and set to default shell
+RUN yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # install java
 RUN apt install openjdk-17-jdk -y
 RUN apt install openjdk-17-jre -y
