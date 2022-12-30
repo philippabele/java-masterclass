@@ -20,6 +20,12 @@ RUN apt update -y && apt install git -y
 RUN apt update -y && apt install gpg -y
 # install curl
 RUN type -p curl >/dev/null || apt install curl -y
+# install kubectl
+RUN curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | dd of=/usr/share/keyrings/kubernetes-archive-keyring.gpg \
+    && chmod go+r /usr/share/keyrings/kubernetes-archive-keyring.gpg \
+    && echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | tee /etc/apt/sources.list.d/kubernetes.list > /dev/null \
+    && apt update \
+    && apt install kubectl -y
 # install GitHub CLI (gh)
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
     && chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
